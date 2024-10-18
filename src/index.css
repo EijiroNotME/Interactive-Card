@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    font-family: "Space Grotesk", sans-serif;
+  }
+  .border-gradient {
+    border-image: linear-gradient(to right, var(--custom-0), var(--custom-100))
+      1;
+  }
+}
+
+@layer components {
+  .error-msg {
+    @apply text-error text-sm font-semibold;
+  }
+  .error-free {
+    @apply text-transparent text-sm font-semibold;
+  }
+}
