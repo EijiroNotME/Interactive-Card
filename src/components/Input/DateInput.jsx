@@ -9,21 +9,21 @@ const DateInput = (props) => {
       {/* <div class="m-0 p-0.5 rounded-md w-full bg-gradient-to-r from-custom-0 to-custom-100"> */}
       <div className="flex flex-row gap-1">
         <input
-          className="p-2 w-full rounded-md focus:outline-none border-2 border-accent-LIGHT/40"
+          className="input"
           type="text"
           placeholder={props.monthPlaceholder}
           value={props.monthValue}
           onChange={props.monthOnChange}
         />
         <input
-          className="p-2 w-full rounded-md focus:outline-none border-2 border-accent-LIGHT/40"
+          className="input"
           type="text"
           placeholder={props.yearPlaceholder}
           value={props.yearValue}
           onChange={props.yearOnChange}
         />
       </div>
-      <p className="error-msg hidden">{props.indicator}</p>
+      <p className="error-msg">{props.indicator}</p>
     </div>
   );
 };

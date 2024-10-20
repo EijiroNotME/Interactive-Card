@@ -2,12 +2,12 @@ import { createContext, useState } from "react";
 export const CardContext = createContext();
 
 export const CardInfoProvider = ({ children }) => {
-  const [cardHolder, setCardHolder] = useState("Jane Appleseed");
-  const [cardNumber, setCardnumber] = useState("0000000000000000");
-  const [month, setMonth] = useState("01");
-  const [year, setYear] = useState("24");
-  const [cvc, setCvc] = useState("123");
-
+  const [cardHolder, setCardHolder] = useState("");
+  const [cardNumber, setCardnumber] = useState("");
+  const [month, setMonth] = useState("");
+  const [year, setYear] = useState("");
+  const [cvc, setCvc] = useState("");
+  const [error, setError] = useState({});
   return (
     <CardContext.Provider
       value={{
@@ -21,6 +21,8 @@ export const CardInfoProvider = ({ children }) => {
         setYear,
         cvc,
         setCvc,
+        error,
+        setError,
       }}
     >
       {children}

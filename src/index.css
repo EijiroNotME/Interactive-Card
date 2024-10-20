@@ -19,4 +19,9 @@
   .error-free {
     @apply text-transparent text-sm font-semibold;
   }
+
+  /* Input */
+  .input {
+    @apply p-2 w-full rounded-md focus:outline-none border-2 border-accent-LIGHT/40 focus:border-custom-100 transition-all ease-in-out duration-75 cursor-pointer;
+  }
 }
