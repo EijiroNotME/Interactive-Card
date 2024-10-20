@@ -6,15 +6,14 @@ const CvcInput = ({ value, placeholder, text, indicator, onChange }) => {
       <p className="uppercase tracking-wider text-sm text-accent font-semibold">
         {text}
       </p>
-      {/* <div class="m-0 p-0.5 rounded-md w-full bg-gradient-to-r from-custom-0 to-custom-100"> */}
       <input
-        className="p-2 w-full rounded-md focus:outline-none border-2 border-accent-LIGHT/40"
+        className="input"
         type="text"
         placeholder={placeholder}
         value={value}
         onChange={onChange}
       />
-      <p className="error-msg hidden">{indicator}</p>
+      <p className="error-msg">{indicator}</p>
     </div>
   );
 };
