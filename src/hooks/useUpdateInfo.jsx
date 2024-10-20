@@ -3,7 +3,7 @@ export const CardContext = createContext();
 
 export const CardInfoProvider = ({ children }) => {
   const [cardHolder, setCardHolder] = useState("");
-  const [cardNumber, setCardnumber] = useState("");
+  const [cardNumber, setCardNumber] = useState("");
   const [month, setMonth] = useState("");
   const [year, setYear] = useState("");
   const [cvc, setCvc] = useState("");
@@ -14,7 +14,7 @@ export const CardInfoProvider = ({ children }) => {
         cardHolder,
         setCardHolder,
         cardNumber,
-        setCardnumber,
+        setCardNumber,
         month,
         setMonth,
         year,
